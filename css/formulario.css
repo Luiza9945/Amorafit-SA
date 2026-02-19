@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5e3d0;
+}
+
+/* Centraliza o conteúdo */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+/* Card principal */
+.card {
+  background-color: #fff4e3;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Título e subtítulo */
+.card h2 {
+  color: #9b0d36;
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #a66c43;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Inputs e Selects */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  color: #a66c43;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input, select {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #a66c43;
+  outline: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+}
+
+input:focus, select:focus {
+  border-color: #9b0d36;
+}
+
+/* Botão */
+.btn-calcular {
+  background-color: #ef5555;
+  color: #fff4e3;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-calcular:hover {
+  background-color: #d44747;
+}
+
+/* Resultado */
+.resultado {
+  background-color: #fff;
+  border: 2px solid #a66c43;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.resultado h3 {
+  color: #9b0d36;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.gasto-total {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ef5555;
+  margin: 10px 0;
+}
+
+.gasto-info {
+  color: #a66c43;
+  font-size: 14px;
+  margin: 0;
+}

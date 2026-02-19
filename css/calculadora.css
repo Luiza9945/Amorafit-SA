@@ -1,0 +1,90 @@
+.banner-amorafit {
+    position: relative;
+    width: 100%;
+    min-height: 180px;
+    background: linear-gradient(135deg, #fff5f8 0%, #ffebee 50%, #f8e1e9 100%);
+    overflow: hidden;
+    margin: 0;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #e91e63;
+    background-image: linear-gradient(to right, rgb(235, 185, 185), rgb(240, 75, 75) );
+  }
+
+  .amora-voando {
+    position: absolute;
+    width: 230px;
+    height: auto;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-12deg);
+    animation: flutuar 6s ease-in-out infinite;
+    z-index: 2;
+  }
+
+  .balao-fala {
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    color: #333;
+    padding: 18px 24px;
+    border-radius: 20px;
+    border: 3px solid #ff80ab;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 380px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .balao-fala::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 20px solid white;
+    z-index: 2;
+  }
+
+  .balao-fala::after {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-right: 24px solid #ff80ab;
+    z-index: 0;
+  }
+
+  @keyframes flutuar {
+    0%, 100% { transform: translateY(-50%) translateX(0) rotate(-12deg); }
+    50%      { transform: translateY(-60%) translateX(15px) rotate(-8deg); }
+  }
+
+  @media (max-width: 768px) {
+    .amora-voando {
+      width: 110px;
+      left: 10%;
+    }
+    
+    .balao-fala {
+      right: 8%;
+      font-size: 1rem;
+      padding: 14px 18px;
+      max-width: 320px;
+    }
+  }

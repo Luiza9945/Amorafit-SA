@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+}
+
+.bg-body-tertiary {
+    background-color: #fff4e3 !important;
+
+}
+
+body {
+    background-color: #f5e3d0;
+}
+
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.5);
+}
+
+
+.btn-comecar {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #cc4444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.center-content {
+    text-align: center;
+    flex: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.credits {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    flex-grow: 2;
+    min-width: 400px;
+    max-width: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* CARD PERFIL */
+.dashboard {
+    width: auto;
+    border-radius: 20px;
+    padding: 25px;
+    ;
+}
+
+/* Mensagem */
+.mensagem {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Gráficos */
+.graficos {
+    height: 450px;
+    width: 450px;
+}
+
+canvas {
+    height: 450px !important;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #f2e5bd;
+}
+
+button:hover {
+    background-color: #d8cbb8;
+}
+
+.igual {
+    background-color: #bf3e5e;
+    color: white;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+
+
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.refeicoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.refeicoes label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #ef5555;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #cc4444;
+}
+
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.boas-vindas {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.calculadora-calorias {
+    flex-grow: 2;
+    /* ocupa mais espaço que os outros */
+    min-width: 400px;
+    /* largura mínima maior */
+    max-width: none;
+    /* remove o limite de 600px */
+}
+
+
+.calculadora-calorias h3 {
+    color: #bf3e5e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calc-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-group input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #6A1B9A;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #6A1B9A;
+}
+
+.resultado p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.resultado span {
+    color: #6A1B9A;
+    font-size: 24px;
+}
+
+/* Refeições */
+.refeicoes {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.refeicoes h5e {
+    color: #6A1B9A;
+    margin: 0;
+    text-align: center;
+}
+
+.refeicao-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.refeicao-options label {
+    display: flex;
+    align-items: center;
+}
+
+.refeicao-options label:hover {
+    background-color: #f0e6f5;
+}
+
+.refeicao-options input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #6A1B9A;
+}
+
+.refeicao-options label span {
+    font-weight: bold;
+    color: #6A1B9A;
+    margin-left: auto;
+}
+
+.refeicoes button {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.cmfun h2 {
+    color: #bf3e5e;
+    text-align: center;
+}
+
+.cmfun p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+    background-color: #ffcdcd79;
+    padding: 10px;
+    border-radius: 10px;
+    width: 580px;
+}
+
+.eraimg {
+    background-color: #ef5555;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.linha-img {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.linha-img p {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.cmfun {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* MyFitnessPal Style Card */
+.mfp-card {
+    background: linear-gradient(130deg, #cc4444 0%, #bf3e5e 100%);
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(234, 102, 153, 0.4);
+    width: 50pc;
+}
+
+.mfp-numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mfp-item {
+    text-align: center;
+    flex: 1;
+}
+
+.mfp-num {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.mfp-label {
+    font-size: 12px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mfp-remaining .mfp-num {
+    font-size: 36px;
+}
+
+.mfp-progress {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.mfp-progress-bar {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease;
+    border-radius: 10px;
+}
+
+.mfp-progress-info {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+#progressPercent {
+    font-weight: bold;
+}
+
+/* Botão Reiniciar MFP */
+.mfp-reset-btn {
+    width: auto;
+    padding: 8px 16px;
+    margin-top: 15px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mfp-reset-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+.mfp-reset-btn:active {
+    transform: translateY(0);
+}
+
+/* Atualizar estilo das refeições */
+.refeicoes {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.refeicoes h5 {
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.refeicao-options {
+    gap: 8px;
+}
+
+.refeicao-options label {
+    padding: 10px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.refeicao-options label:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.refeicao-options label span {
+    color: #667eea;
+}
+
+/* Atualizar botão */
+.calculadora-calorias button {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.calculadora-calorias button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+
+.ref-calc {
+    display: flex;
+    gap: 30px;
+    width: 50%;
+}
+
+.reta {
+    display: flex;
+    margin: 0 50px;
+}

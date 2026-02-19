@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5e3d0;
+}
+
+/* Container central */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card de perfil */
+.card-perfil {
+  background-color: #fff4e3;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+}
+
+
+/* Foto do perfil */
+.logo{
+    width: 300px;   
+    border-radius: 50%;
+    border: #9b0d36 4px solid;
+}
+
+/* Nome e bio */
+.card-perfil h2 {
+  color: #9b0d36;
+  margin: 10px 0 5px;
+}
+
+.bio {
+  color: #a66c43;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Informações */
+.info {
+  text-align: left;
+  font-size: 14px;
+  color: #663b1e;
+  margin-bottom: 25px;
+}
+
+.info strong {
+  color: #9b0d36;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #ef5555;
+  color: #fff4e3;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #d44747;
+}
+
+/* Botão sair */
+.sair {
+  background-color: #a66c43;
+}
+
+.sair:hover {
+  background-color: #8d5633;
+}

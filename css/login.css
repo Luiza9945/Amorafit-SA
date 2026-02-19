@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5e3d0;
+}
+
+/* Centraliza o conteúdo */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card principal */
+.card {
+  background-color: #fff4e3;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  width: 450px;
+  text-align: center;
+}
+
+/* Mascote */
+.mascote {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* Título e subtítulo */
+.card h2 {
+  color: #9b0d36;
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #a66c43;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  text-align: left;
+  color: #a66c43;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #a66c43;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #9b0d36;
+}
+
+/* Botão */
+.btn-entrar {
+  background-color: #ef5555;
+  color: #fff4e3;
+  border: none;
+  border-radius: 20px;
+  padding: 0 120px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+  height: 45px;
+
+}
+
+.btn-entrar:hover {
+  background-color: #d44747;
+}
+
+/* Link de cadastro */
+.cadastro-link {
+  font-size: 13px;
+  color: #9b0d36;
+  margin-top: 10px;
+}
+
+.cadastro-link a {
+  color: #a66c43;
+  text-decoration: none;
+  font-weight: bold;
+}
