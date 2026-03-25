@@ -1,0 +1,588 @@
+/* Reset e Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Importar fonte League Spartan */
+@font-face {
+  font-family: 'League Spartan';
+  src: url('../LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+body {
+  background-color: #f5e3d0;
+}
+
+/* Header */
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+}
+
+.navbar-perfil img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #e91e63;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+/* Botões do Header */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 80px;
+  top: 15px;
+  z-index: 100;
+}
+
+/* Botão de Ação (Principal) - Verde */
+.btn-entrar,
+.btn-acao {
+  background-color: #7ABF98;
+  color: #F2E5BD;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-entrar:hover,
+.btn-acao:hover {
+  background-color: #6AAD87;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(122, 191, 152, 0.4);
+  color: #F2E5BD;
+}
+
+/* Botão de Opção (Secundário) - Rosa */
+.btn-cadastrar,
+.btn-opcao {
+  background-color: transparent;
+  border: 2px solid #BF3E5E;
+  color: #BF3E5E;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-cadastrar:hover,
+.btn-opcao:hover {
+  background-color: #BF3E5E;
+  color: #F2E5BD;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(191, 62, 94, 0.3);
+}
+
+.bg-body-tertiary {
+  background-color: #F2E5BD !important;
+}
+
+
+footer {
+  background-color: #F2E5BD;
+  text-align: center;
+  padding: 20px;
+}
+
+
+footer p {
+  color: #BF3E5E;
+  font-size: 20px;
+}
+
+footer a {
+  color: #BF3E5E;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.center-content {
+  text-align: center;
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  color: #BF3E5E;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.credits {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.9rem;
+}
+
+/* Main - Boas-vindas */
+.boas-vindas {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  right: 15%;
+}
+
+.boas-vindas p {
+  color: #f19ba2;
+  font-size: 35px;
+}
+
+.banner-amorafit {
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  background-color: #bf355e;
+  overflow: hidden;
+  margin: 0;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #e91e63;
+  height: 700px;
+}
+
+.amora-voando {
+  position: absolute;
+  width: 650px;
+  height: auto;
+  top: 60%;
+  transform: translateY(-50%) rotate(-12deg);
+  animation: flutuar 6s ease-in-out infinite;
+  z-index: 2;
+  left: -5%;
+}
+
+
+.balao-fala {
+  position: absolute;
+  right: 58%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  color: #333;
+  padding: 18px 24px;
+  border-radius: 20px;
+  border: 3px solid #ff80ab;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 380px;
+  text-align: center;
+  z-index: 1;
+
+}
+
+.balao-fala::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 20px solid #fff;
+  z-index: 2;
+}
+
+.balao-fala::after {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-right: 24px solid #ff80ab;
+  z-index: 0;
+}
+
+@keyframes flutuar {
+
+  0%,
+  100% {
+    transform: translateY(-50%) translateX(0) rotate(-12deg);
+  }
+
+  50% {
+    transform: translateY(-60%) translateX(15px) rotate(-8deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .amora-voando {
+    width: 110px;
+    left: 10%;
+  }
+
+  .balao-fala {
+    right: 8%;
+    font-size: 1rem;
+    padding: 14px 18px;
+    max-width: 320px;
+  }
+}
+
+.balao-fala p {
+  color: #bf355e;
+}
+
+p {
+  color: #F2E5BD;
+
+}
+
+h1 {
+  color: #F2E5BD;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 100px;
+  margin-bottom: -25px;
+  font-weight: 700;
+}
+
+.intro {
+  position: absolute;
+  top: 60%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  width: 720px;
+  height: 90px;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.intro p {
+  font-size: 25px;
+  line-height: 1.5;
+  height: 200%;
+  overflow-y: auto;
+  padding-right: 10px;
+  font-weight: 400;
+}
+
+/* Scrollbar transparente */
+.intro p::-webkit-scrollbar {
+  width: 8px;
+}
+
+.intro p::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.intro p::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+
+.background-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.circulos {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.circulos::before {
+  content: "";
+  position: absolute;
+  width: 920px;
+  height: 920px;
+  right: 10%;
+  border-radius: 50%;
+  background: #f19ba294;
+  filter: blur(1px);
+}
+
+.bolha {
+  position: absolute;
+  border-radius: 50%;
+  background: #ff7a98;
+  box-shadow: 0 0 20px rgba(255, 122, 152, 0.5);
+}
+
+/* grande embaixo direita */
+.b1 {
+  width: 240px;
+  height: 240px;
+  bottom: -50%;
+  right: 40%;
+}
+
+/* média perto do centro */
+.b2 {
+  width: 70px;
+  height: 70px;
+  right: 400px;
+  bottom: 250px;
+}
+
+/* pequena acima */
+.b3 {
+  width: 100px;
+  height: 100px;
+  bottom: -90px;
+  right: 30px;
+}
+
+/* lateral direita superior */
+.b4 {
+  width: 155px;
+  height: 155px;
+  top: 60px;
+  right: 80px;
+}
+
+.b1 {
+  background: #F29BA2;
+}
+
+.b2 {
+  background: #BF3E5E;
+}
+
+.b3 {
+  background: #7ABF98;
+}
+
+.b4 {
+  background: #F29BA2;
+}
+
+.balao-fala {
+  background: #fff;
+  border: 2px solid #fff;
+  color: #BF3E5E;
+}
+
+/* Seção Planos Premium */
+.planos-premium {
+  background-color: #F2E5BD;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.planos-premium .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo-planos {
+  color: #BF3E5E;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.subtitulo-planos {
+  color: #7ABF98;
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.cards-planos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-plano {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  border: 3px solid transparent;
+}
+
+.card-plano:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Plano Gratuito */
+.plano-gratuito {
+  border-color: #7ABF98;
+}
+
+.plano-gratuito .card-header h3 {
+  color: #7ABF98;
+}
+
+/* Plano Premium (Destaque) */
+.plano-premium {
+  border-color: #BF3E5E;
+  transform: scale(1.05);
+}
+
+.plano-premium:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.plano-premium .card-header h3 {
+  color: #BF3E5E;
+}
+
+.destaque {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #BF3E5E;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Plano Premium+ */
+.plano-plus {
+  border-color: #F29BA2;
+}
+
+.plano-plus .card-header h3 {
+  color: #F29BA2;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.card-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.preco {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+.preco span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+
+.recursos {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.recursos li {
+  padding: 10px 0;
+  font-size: 15px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recursos li i.bi-check-circle {
+  color: #7ABF98;
+  font-size: 18px;
+}
+
+.recursos li i.bi-x-circle {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.btn-plano {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .cards-planos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-plano {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .plano-premium {
+    transform: scale(1);
+  }
+
+  .plano-premium:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-planos {
+    font-size: 32px;
+  }
+
+  .subtitulo-planos {
+    font-size: 16px;
+  }
+
+  .card-plano {
+    padding: 20px;
+  }
+}

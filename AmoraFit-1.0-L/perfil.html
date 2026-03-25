@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <title>Perfil do úsuario</title>
+</head>
+
+<body>
+    <!-- Bolhas de fundo -->
+    <div class="bg-bubbles">
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
+        <div class="bubble b4"></div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="logo-amora.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Lar</a></li>
+                                <li><a class="dropdown-item" href="calculadora.html">Suas calorias</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="perfil.html">perfil</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="perfil-container">
+            <div class="card-perfil">
+                <img src="usuario.jpg" alt="Foto do usuário" id="fotoPerfil" class="logo">
+
+                <h2 id="nomeUsuario">nome do usuário</h2>
+
+                <div class="info">
+                    <p><strong>Email:</strong> <span id="emailUsuario">carregando...</span></p>
+                </div>
+
+                <div class="botoes">
+                    <button id="editarBtn">Editar perfil</button>
+                    <button id="sairBtn" class="btn-opcao">Excluir conta</button>
+                </div>
+            </div>
+
+            <div class="info-formulario">
+                <h2>Meus Dados</h2>
+
+                <p><strong>Idade:</strong> <span id="idadeUsuario">-</span> anos</p>
+                <p><strong>Peso:</strong> <span id="pesoUsuario">-</span> kg</p>
+                <p><strong>Altura:</strong> <span id="alturaUsuario">-</span> cm</p>
+                <p><strong>Nível de Atividade:</strong> <span id="atividadeUsuario">-</span></p>
+                <p><strong>Objetivo:</strong> <span id="objetivoUsuario">-</span></p>
+
+                <button id="atualizarDadosBtn" class="btn-atualizar">Atualizar Dados</button>
+            </div>
+        </div>
+
+ 
+
+    </main>
+
+    <!-- Modal de Edição de Perfil (Nome e Email) -->
+    <div id="modalEditar" class="modal-editar">
+        <div class="modal-conteudo-editar">
+            <span class="fechar-modal" id="fecharModal">&times;</span>
+            <h2>Editar Perfil</h2>
+            <form id="formEditarPerfil">
+                <label for="novoNome">Nome:</label>
+                <input type="text" id="novoNome" name="novoNome" placeholder="Digite seu nome" required>
+
+                <label for="novoEmail">Email:</label>
+                <input type="email" id="novoEmail" name="novoEmail" placeholder="Digite seu email" required>
+
+                <button type="submit" class="btn-salvar">Salvar</button>
+                <button type="button" id="cancelarEdicao" class="btn-cancelar">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Atualização de Dados (Idade, Peso, Altura, Atividade, Objetivo) -->
+    <div id="modalAtualizarDados" class="modal-editar">
+        <div class="modal-conteudo-editar">
+            <span class="fechar-modal" id="fecharModalDados">&times;</span>
+            <h2>Atualizar Dados</h2>
+            <form id="formAtualizarDados">
+                <label for="novaIdade">Idade:</label>
+                <input type="number" id="novaIdade" name="novaIdade" placeholder="Digite sua idade" min="1" required>
+
+                <label for="novoPeso">Peso (kg):</label>
+                <input type="number" id="novoPeso" name="novoPeso" placeholder="Digite seu peso" step="0.1" min="0"
+                    required>
+
+                <label for="novaAltura">Altura (cm):</label>
+                <input type="number" id="novaAltura" name="novaAltura" placeholder="Digite sua altura" step="0.1"
+                    min="0" required>
+
+                <label for="novoNivelAtividade">Nível de Atividade:</label>
+                <select id="novoNivelAtividade" name="novoNivelAtividade" required>
+                    <option value="1.2">Sedentário</option>
+                    <option value="1.375">Levemente ativo</option>
+                    <option value="1.55">Moderadamente ativo</option>
+                    <option value="1.725">Muito ativo</option>
+                    <option value="1.9">Extremamente ativo</option>
+                </select>
+
+                <label for="novoObjetivo">Objetivo:</label>
+                <select id="novoObjetivo" name="novoObjetivo" required>
+                    <option value="emagrecer">Emagrecer</option>
+                    <option value="manter">Manter peso</option>
+                    <option value="engordar">Ganhar peso</option>
+                </select>
+
+                <button type="submit" class="btn-salvar">Salvar</button>
+                <button type="button" id="cancelarAtualizacao" class="btn-cancelar">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="center-content">
+                <p>© 2026 MeuSite - Todos os direitos reservados</p>
+                <div>
+                    <a href="#">Sobre |</a>
+                    <a href="#">Contato |</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-google-play"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="credits">
+                <p>Créditos: Luiza, Valeria, Kalebe, Isabella, Liva, Maria</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/perfil.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

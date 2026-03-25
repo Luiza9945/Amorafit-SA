@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AmoraFit-1.0-V",
+		"liveServer.settings.port": 5501
+	}
+}

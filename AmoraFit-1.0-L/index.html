@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Tela de boas-vindas </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="header-buttons">
+                <a href="login.html" class="btn-entrar">Entrar</a>
+                <a href="cadastro.html" class="btn-cadastrar">Cadastrar</a>
+            </div>
+            <a class="navbar-perfil" href="perfil.html"><img src="usuario.jpg" alt="perfil"></a>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="logo-amora.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Lar</a></li>
+                                <li><a class="dropdown-item" href="calculadora.html">Suas calorias</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="perfil.html">perfil</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div class="banner-amorafit">
+
+            <div class="circulos">
+
+                <div class="bolha b1"></div>
+                <div class="bolha b2"></div>
+                <div class="bolha b3"></div>
+                <div class="bolha b4"></div>
+
+            </div>
+
+            <div class="boas-vindas">
+                <h1>AmoraFit</h1>
+                <p>Equilíbrio na hora, vem pra Amora</p>
+            </div>
+            <div class="intro">
+                <p>O AmoraFit ajuda você a acompanhar sua alimentação de forma simples e clara.
+                    Durante o dia, é possível registrar as refeições e visualizar quanto já foi consumido,
+                    facilitando o controle da sua meta diária. A proposta não é restringir, mas orientar
+                    ,ao entender melhor suas quantidades, fica mais fácil manter o equilíbrio sem abrir
+                    mão do que você gosta.
+                </p>
+            </div>
+
+
+            <img src="Amora Fit.png" alt="Amora feliz voando" class="amora-voando">
+
+            <div class="balao-fala">
+                <p>Comeu agora? <br>
+                    Registra na Amora.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Seção Planos Premium -->
+    <section class="planos-premium">
+      
+        <div class="container">
+            <h2 class="titulo-planos">Escolha seu Plano</h2>
+            <p class="subtitulo-planos">Desbloqueie recursos exclusivos para atingir suas metas</p>
+
+            <div class="cards-planos">
+                <!-- Plano 1 - Gratuito -->
+                <div class="card-plano plano-gratuito">
+                    <div class="card-header">
+                        <h3>Plano Gratuito</h3>
+                        <p class="preco">R$ 0<span>/mês</span></p>
+                    </div>
+                    <ul class="recursos">
+                        <li><i class="bi bi-check-circle"></i> Registro básico de refeições</li>
+                        <li><i class="bi bi-check-circle"></i> Controle de calories diária</li>
+                        <li><i class="bi bi-check-circle"></i> Metas personalizadas</li>
+                        <li><i class="bi bi-x-circle"></i> Tabela nutricional completa</li>
+                        <li><i class="bi bi-x-circle"></i> Detalhamento de macros</li>
+                        <li><i class="bi bi-x-circle"></i> Gráficos de evolução</li>
+                    </ul>
+                    <a href="cadastro.html" class="btn-plano btn-opcao">Começar Grátis</a>
+                </div>
+
+                <!-- Plano 2 - Premium -->
+                <div class="card-plano plano-premium">
+                    <div class="destaque">Mais Popular</div>
+                    <div class="card-header">
+                        <h3>Plano Premium</h3>
+                        <p class="preco">R$ 19,90<span>/mês</span></p>
+                    </div>
+                    <ul class="recursos">
+                        <li><i class="bi bi-check-circle"></i> Tudo do Plano Gratuito</li>
+                        <li><i class="bi bi-check-circle"></i> Registro com tabela nutricional</li>
+                        <li><i class="bi bi-check-circle"></i> Cálculo de gramas e calorias</li>
+                        <li><i class="bi bi-check-circle"></i> Controle de gorduras</li>
+                        <li><i class="bi bi-check-circle"></i> Controle de proteínas</li>
+                        <li><i class="bi bi-check-circle"></i> Controle de fibras</li>
+                        <li><i class="bi bi-x-circle"></i> Gráficos de evolução</li>
+                    </ul>
+                    <a href="cadastro.html" class="btn-plano btn-acao">Assinar Premium</a>
+                </div>
+
+                <!-- Plano 3 - Premium+ -->
+                <div class="card-plano plano-plus">
+                    <div class="card-header">
+                        <h3>Plano Premium+</h3>
+                        <p class="preco">R$ 29,90<span>/mês</span></p>
+                    </div>
+                    <ul class="recursos">
+                        <li><i class="bi bi-check-circle"></i> Tudo do Plano Premium</li>
+                        <li><i class="bi bi-check-circle"></i> Gráficos semanais</li>
+                        <li><i class="bi bi-check-circle"></i> Gráficos mensais</li>
+                        <li><i class="bi bi-check-circle"></i> Gráficos anuais</li>
+                        <li><i class="bi bi-check-circle"></i> Evolução completa</li>
+                        <li><i class="bi bi-check-circle"></i> Acompanhamento de metas</li>
+                    </ul>
+                    <a href="cadastro.html" class="btn-plano btn-opcao">Assinar Premium+</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="center-content">
+                <p>© 2026 MeuSite - Todos os direitos reservados</p>
+                <div>
+                    <a href="#">Sobre</a> |
+                    <a href="#">Contato</a> |
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-google-play"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+            </div>
+            <div class="credits">
+                <p>Créditos: Luiza, Valeria, Kalebe, Isabella, Liva, Maria</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

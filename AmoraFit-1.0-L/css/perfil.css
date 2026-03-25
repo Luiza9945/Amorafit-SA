@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+
+/* Header / Navbar */
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+}
+
+.navbar-perfil img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #e91e63;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+/* Botões do Header */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 80px;
+  top: 15px;
+  z-index: 100;
+}
+
+/* Botão de Ação (Principal) - Verde */
+.btn-entrar,
+.btn-acao {
+  background-color: #7ABF98;
+  color: #F2E5BD;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-entrar:hover,
+.btn-acao:hover {
+  background-color: #6AAD87;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(122, 191, 152, 0.4);
+  color: #F2E5BD;
+}
+
+/* Botão de Opção (Secundário) - Rosa */
+.btn-cadastrar,
+.btn-opcao {
+  background-color: transparent;
+  border: 2px solid #BF3E5E;
+  color: #BF3E5E;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-cadastrar:hover,
+.btn-opcao:hover {
+  background-color: #BF3E5E;
+  color: #F2E5BD;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(191, 62, 94, 0.3);
+}
+
+.bg-body-tertiary {
+  background-color: #BF3E5E !important;
+}
+
+footer {
+  background-color: #BF3E5E;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  color: #f29ba2;
+  font-size: 20px;
+}
+
+footer a {
+  color: #f29ba2;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.center-content {
+  text-align: center;
+  flex: 1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  color: #F2E5BD;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.credits {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.9rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #F2E5BD;
+}
+
+/* Container central */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  padding: 140px 20px;
+}
+
+/* Container do perfil lado a lado */
+.perfil-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card de perfil */
+.card-perfil {
+  background-color: #BF3E5E;
+  padding: 40px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(155, 13, 54, 0.3);
+}
+
+
+/* Foto do perfil */
+.logo {
+  width: 200px;
+  border-radius: 50%;
+  border: #7ABF98 4px solid;
+}
+
+/* Nome e bio */
+.card-perfil h2 {
+  color: #F2E5BD;
+  margin: 10px 0 5px;
+}
+
+
+/* Informações */
+.info {
+  text-align: left;
+  font-size: 14px;
+  color: #F2E5BD;
+  margin-bottom: 25px;
+}
+
+.info strong {
+  color: #f29ba2;
+}
+
+/* Fontes gerais - igualar ao index */
+p {
+  font-size: 20px;
+}
+
+/* Informações do Formulário */
+.info-formulario {
+  text-align: left;
+  font-size: 14px;
+  color: #0d0d0d;
+  padding: 30px;
+  background-color: #7ABF98;
+  border-radius: 0 20px 20px 0;
+  width: 350px;
+  border: 2px solid #6AAD87;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(155, 13, 54, 0.3);
+}
+
+.info-formulario h2 {
+  color: #F2E5BD;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.info-formulario p {
+  margin: 10px 0;
+  color: #BF3E5E;
+}
+
+.info-formulario strong {
+  color: #F2E5BD;
+}
+
+/* Botão Atualizar Dados */
+.btn-atualizar {
+  background-color: #BF3E5E;
+  color: #F2E5BD;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 16px;
+  margin-bottom: -15px;
+  margin-top: 10px;
+}
+
+.btn-atualizar:hover {
+  background-color: #b63a59;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(191, 62, 94, 0.4);
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Botão de Ação (Principal) - Verde */
+.btn-acao,
+button {
+  background-color: #7ABF98;
+  color: #F2E5BD;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-acao:hover,
+button:hover {
+  background-color: #6AAD87;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(122, 191, 152, 0.4);
+  color: #F2E5BD;
+}
+
+/* Botão de Opção (Secundário) - Rosa */
+.btn-opcao {
+  background-color: transparent;
+  border: 2px solid #F2E5BD;
+  color: #7ABF98;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn-opcao:hover {
+  background-color: #F2E5BD;
+  color: #7ABF98;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(62, 191, 120, 0.3);
+}
+
+/* Botão sair */
+.sair {
+  background-color: #a66c43;
+}
+
+.sair:hover {
+  background-color: #8d5633;
+}
+
+/* Modal de Edição de Perfil */
+.modal-editar {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-conteudo-editar {
+  background-color: #fff4e3;
+  margin: 10% auto;
+  padding: 30px;
+  border: 2px solid #9b0d36;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-conteudo-editar h2 {
+  color: #9b0d36;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fechar-modal {
+  color: #9b0d36;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.fechar-modal:hover {
+  color: #BF3E5E;
+}
+
+#formEditarPerfil,
+#formAtualizarDados {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#formEditarPerfil label,
+#formAtualizarDados label {
+  color: #663b1e;
+  font-weight: 600;
+}
+
+#formEditarPerfil input,
+#formAtualizarDados input,
+#formAtualizarDados select {
+  padding: 10px;
+  border: 2px solid #7ABF98;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#formEditarPerfil input:focus,
+#formAtualizarDados input:focus,
+#formAtualizarDados select:focus {
+  outline: none;
+  border-color: #9b0d36;
+}
+
+.btn-salvar {
+  background-color: #7ABF98;
+  color: #F2E5BD;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-salvar:hover {
+  background-color: #6AAD87;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(122, 191, 152, 0.4);
+}
+
+.btn-cancelar {
+  background-color: transparent;
+  border: 2px solid #BF3E5E;
+  color: #BF3E5E;
+  border-radius: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-cancelar:hover {
+  background-color: #BF3E5E;
+  color: #F2E5BD;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(191, 62, 94, 0.3);
+}
+
+.nav-link {
+  color: #f2e5bde0 !important;
+}
+
+/* Bolhas de fundo */
+.bg-bubbles {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* estilo padrão */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(1px);
+  box-shadow: 0 0 20px rgba(255, 122, 152, 0.5);
+}
+
+/* esquerda grande (meio) */
+.b1 {
+  width: 38vw;
+  height: 38vw;
+  left: -20%;
+  top: 70%;
+  background: #f29ba2;
+}
+
+/* esquerda inferior pequena */
+.b2 {
+  width: 100px;
+  height: 100px;
+  left: 5%;
+  bottom: 20%;
+  background: #7ABF98;
+}
+
+/* direita grande superior */
+.b3 {
+  width: 36vw;
+  height: 36vw;
+  right: -14vw;
+  top: -50%;
+  background: #f19ba294;
+}
+
+/* direita inferior média */
+.b4 {
+  width: 70px;
+  height: 70px;
+  right: 10%;
+  bottom: 95%;
+  background: #BF3E5E;
+}
